@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import VideoGrid from "@/components/VideoGrid";
 import React from "react";
 
 const Page = ({ params }: { params: { id: string } }) => {
@@ -11,7 +12,7 @@ const Page = ({ params }: { params: { id: string } }) => {
         userImg={"https://github.com/shadcn.png" ?? ""}
         showAvatar={true}
       />
-      <div className="md:px-24">user id: {id}</div>
+      <VideoGrid />
     </div>
   );
 };

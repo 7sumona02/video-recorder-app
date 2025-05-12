@@ -31,7 +31,7 @@ const Header = ({
 }: HeaderProps) => {
   const id = useId();
   return (
-    <div className="max-w-[1440px] mx-auto md:px-24 py-10 flex flex-col space-y-10">
+    <div className="max-w-[1440px] mx-auto md:px-24 px-6 py-10 flex flex-col space-y-10">
       <div className="flex justify-between">
         <div className="flex items-center space-x-3">
           {showAvatar && ( // Only show avatar if showAvatar is true
@@ -75,7 +75,7 @@ const Header = ({
       </div>
 
       <div className="flex justify-between">
-        <div className="*:not-first:mt-2 w-[26vw]">
+        <div className="*:not-first:mt-2 md:w-[26vw] w-lg">
           <div className="relative">
             <Input
               id={id}
@@ -99,7 +99,7 @@ const Header = ({
                 <AlignRight className="sm:-ms-1" size={16} aria-hidden="true" />
                 <span className="max-sm:sr-only">Most viewed</span>
                 <ChevronDownIcon
-                  className="-me-1 ml-1 opacity-60"
+                  className="-me-1 ml-1 opacity-60 max-sm:sr-only"
                   size={16}
                   aria-hidden="true"
                 />
@@ -107,9 +107,8 @@ const Header = ({
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="max-w-xl">
               <DropdownMenuItem>Most Recent</DropdownMenuItem>
-              <DropdownMenuItem>Option 2</DropdownMenuItem>
-              <DropdownMenuItem>Option 3</DropdownMenuItem>
-              <DropdownMenuItem>Option 4</DropdownMenuItem>
+              <DropdownMenuItem>Oldest First</DropdownMenuItem>
+              <DropdownMenuItem>Least Viewed</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
   const router = useRouter();
   return (
     <div
-      className={`text-xl ${sm.className} flex justify-between items-center md:px-24 py-4 border-b shadow-xs shadow-purple-400`}
+      className={`text-xl ${sm.className} flex justify-between items-center md:px-24 px-6 py-4 border-b shadow-xs shadow-purple-400`}
     >
       <Link href="/" className="cursor-pointer">
         <div>Snapcast</div>
