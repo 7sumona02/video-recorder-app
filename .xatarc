@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Sumona-s-workspace-f1javb.us-east-1.xata.sh/db/snapcast",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
